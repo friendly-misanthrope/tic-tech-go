@@ -10,7 +10,7 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <NavButton icon={HomeIcon} label="Home" href="/home" />
           <Link href="/home" title="Home" className="flex justify-center items-center gap-2 ml-0">
-            <h1>Leo&apos;s Device Repair</h1>
+            <h1 className="hidden sm:block text-xl font-bold m-0 mt-1">Leo&apos;s Device Repair</h1>
           </Link>
         </div>
 
