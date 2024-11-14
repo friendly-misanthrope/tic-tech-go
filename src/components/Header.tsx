@@ -7,7 +7,7 @@ export default function Header() {
     <header className="animate-slide bg-background h-12 p-2 border-b sticky top-0 z-10">
       <div className="flex h-8 items-center justify-between w-full">
         
-        <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
           <NavButton icon={HomeIcon} label="Home" href="/home" />
           <Link href="/home" title="Home">
             <h1>Leo&apos;s Device Repair</h1>
