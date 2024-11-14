@@ -4,9 +4,9 @@ export default async function AppLayout({
   children: React.ReactNode
 }) {
   return (
-    <div>
+    <div className="mx-auto w-full max-width-8xl">
       {/* Header goes here */}
-      <div>
+      <div className="px-4 py-2">
         { children }
       </div>
     </div>
