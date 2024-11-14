@@ -4,7 +4,7 @@ export default async function AppTemplate({
   children: React.ReactNode
 }) {
   return (
-    <div>
+    <div className="animate-appear">
       { children }
     </div>
   )
