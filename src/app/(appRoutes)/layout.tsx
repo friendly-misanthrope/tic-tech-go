@@ -1,3 +1,5 @@
+import Header from "@/components/Header"
+
 export default async function AppLayout({
   children
 }: {
@@ -5,7 +7,7 @@ export default async function AppLayout({
 }) {
   return (
     <div className="mx-auto w-full max-width-8xl">
-      {/* Header goes here */}
+      <Header />
       <div className="px-4 py-2">
         { children }
       </div>
