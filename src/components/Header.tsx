@@ -5,7 +5,7 @@ import { NavButton } from "@/components/NavButton"
 export default function Header() {
   return (
     <header>
-      <div>
+      <div className="flex h-8 items-center justify-between w-full">
         
         <div>
           <NavButton icon={HomeIcon} label="Home" href="/home" />
