@@ -1,7 +1,7 @@
 # User Stories for Repair Shop App
 
 1. [ ] Replace current sticky note system
-2. [ ] Add a public facing page with basic contact info 
+2. [x] Add a public facing page with basic contact info 
 3. [ ] Add a passwordless employee login to the app 
 4. [ ] Show a real-time open tickets page after login 
 5. [ ] Provide easy navigation & search for customers & tickets 
