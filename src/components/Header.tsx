@@ -4,7 +4,7 @@ import { NavButton } from "@/components/NavButton"
 
 export default function Header() {
   return (
-    <header>
+    <header className="animate-slide bg-background h-12 p-2 border-b sticky top-0 z-10">
       <div className="flex h-8 items-center justify-between w-full">
         
         <div>
