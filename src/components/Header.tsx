@@ -16,7 +16,7 @@ export default function Header() {
 
         <div>
           <NavButton icon={File} label="Tickets" href="/tickets" />
-          <NavButton icon={UsersRound} label="Customers" href="/tickets" />
+          <NavButton icon={UsersRound} label="Customers" href="/customers" />
         </div>
 
       </div>
