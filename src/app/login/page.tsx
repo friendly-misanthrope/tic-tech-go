@@ -7,8 +7,6 @@ export default function LoginPage() {
       <h1>Leo's Device Repair</h1>
       
       <Button 
-        variant="ghost"
-        className="bg-white text-black"
         asChild
       >
         <LoginLink>Sign In</LoginLink>
