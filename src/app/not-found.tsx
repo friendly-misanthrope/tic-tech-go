@@ -17,14 +17,13 @@ export default function NotFound() {
         width={560}
         height={420}
       />
-      <p className="text-xl sm:text-2xl">The page you have requested doesn't exist.</p>
+      
       <Button
-        variant="ghost"
         size="lg"
         asChild
         className="font-bold"
       >
-        <Link href="/home" className="mt-0 sm:mt-4 bg-slate-800 hover:bg-slate-700">
+        <Link href="/home" className="mt-0 sm:mt-4">
           Go Home
         </Link>
       </Button>
