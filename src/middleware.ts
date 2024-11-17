@@ -13,7 +13,11 @@ export default withAuth(
 
 export const config = {
   matcher: [
-    // Require valid auth for all request paths except homepage and those listed below
+    // Require valid auth for all request paths except those listed below
+    // ($ at end represents homepage)
+    // "/((?!api|_next/static|_next/image|auth|favicon.ico|robots.txt|img|login|not-found|$).*)"
+
+    // List all routes that need to be protected
     "/home",
     "/customers",
     "/tickets"
