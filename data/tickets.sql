@@ -1,0 +1,2 @@
+INSERT INTO tickets (customer_id, title, description, is_complete, employee, created_at, updated_at)
+  VALUES (1, "Drizzle ORM not working", "Customer reports drizzle migration script not creating tables correctly", false, "unassigned");
