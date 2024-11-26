@@ -1,0 +1,1 @@
+ALTER TABLE "customers" RENAME COLUMN "isActive" TO "is_active";
