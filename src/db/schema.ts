@@ -30,3 +30,18 @@ export const tickets = pgTable("tickets", {
   updatedAt: timestamp("updated_at").notNull().defaultNow().
   $onUpdate(() => new Date())
 })
+
+export const customersRelations = relations(customers,
+  ({ many }) => ({
+    tickets: many(tickets),
+  })
+)
+
+export const ticketsRelations = relations(tickets,
+  ({ one }) => ({
+    customer: one(customers, {
+      fields: [tickets.customerId],
+      references: [customers.id]
+    })
+  })
+)
