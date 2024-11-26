@@ -18,3 +18,15 @@ export const customers = pgTable("customers", {
   updatedAt: timestamp("updated_at").notNull().defaultNow().
   $onUpdate(() => new Date())
 })
+
+export const tickets = pgTable("tickets", {
+  id: serial("id").primaryKey(),
+  customerId: integer("customer_id").notNull().references(() => customers.id),
+  title: varchar("title").notNull(),
+  description: text("description"),
+  isComplete: boolean("is_complete").notNull().default(false),
+  employee: varchar("employee"),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+  updatedAt: timestamp("updated_at").notNull().defaultNow().
+  $onUpdate(() => new Date())
+})
