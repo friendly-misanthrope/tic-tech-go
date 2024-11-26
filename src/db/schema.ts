@@ -13,7 +13,7 @@ export const customers = pgTable("customers", {
   state: varchar("state", { length: 2 }).notNull(),
   zip: varchar("zip", { length: 10 }).notNull(),
   notes: text("notes"),
-  isActive: boolean("isActive").notNull().default(true),
+  isActive: boolean("is_active").notNull().default(true),
   createdAt: timestamp("created_at").notNull().defaultNow(),
   updatedAt: timestamp("updated_at").notNull().defaultNow().
   $onUpdate(() => new Date())
