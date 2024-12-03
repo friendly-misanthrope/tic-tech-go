@@ -18,7 +18,7 @@ export default async function TicketFormPage({
       )
     }
 
-    // New ticket form
+    // New ticket form (customerId provided)
     if (customerId) {
       <NewTicketForm
       customerId={customerId}
@@ -26,7 +26,7 @@ export default async function TicketFormPage({
     }
     
 
-    // Edit ticket form
+    // Edit ticket form (ticketId provided)
     if (ticketId) {
 
     }
